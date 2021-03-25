@@ -23,7 +23,8 @@ pipeline {
         }  
     }
     post {
-         sleep(5)
-         bat 'echo fim !'
+        always {
+            bat 'echo fim !'
+        }
     }
 }
